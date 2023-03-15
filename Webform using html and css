@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PAYMENT FROM</title>
+</head>
+<link rel="stylesheet" href="webform.css">
+<body>
+    <div class="container">
+    <form>
+        <h1><b>Contact Details</b></h1>
+        <hr>
+        <p>Name:<br><input type="text" name="Name" required placeholder="Enter your name"></p>
+        <p>Address:<textarea name="Text" cols="100" rows="10" required placeholder="Enter your address"></textarea></p>
+        <p>Mobile Number:<input type="number" name="Mobile Number" placeholder="Enter your mobile number"required></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>  
+            Male<input type="radio" name="Gender" id="Gender" required>
+            Female<input type="radio" name="Gender" id="Gender" required>
+        </p>
+    </fieldset>
+    <p>
+        Email: <input type="email" name="email" id="email" required>
+    </p>
+        <p>Fathers Name:<input type="text" name="Fathers Name" required></p>
+        <p>Mothers Name:<input type="text" name="Mothers Name" required></p>
+        <hr>
+        <h1><b>PAYMENT INFORMATION</h1></b></h1>
+        <hr>
+        <fieldset>
+            <legend><b>Card Type </b></legend>
+        <p> 
+           <!-- Debit Card<input type="radio" name="card">
+            Credit Card<input type="radio" name="card">
+            select is used to make drop down list -->
+            <select name="Card_type" id="Card_type" required>
+            <option name="" >--Select A Card Type</option>
+            <option name="Credit" >Credit Card</option>
+            <option name="Debit" >Debit Card</option>
+            <option name="Visa" > Card</option>
+        </select>
+        </p>
+        </fieldset>
+        <p>Card Number: <input type="number" id="Card number" required name="Card Number"></p>        
+        <p>Cvv: <input type="password"  name="Cvv" required></p>
+        <p>Valid from Date:<input type="date" name="VFD" required></p> 
+        <p>Expiry Date:<input type="date" name="Exp" required></p>
+        <input type="submit" value="Pay Now">      
+    </form>
+</div>
+</body>
+</html>
